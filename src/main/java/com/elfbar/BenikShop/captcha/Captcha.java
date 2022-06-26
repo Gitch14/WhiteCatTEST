@@ -6,7 +6,7 @@ import java.util.List;
 
 public class Captcha {
 
-    private final List<String> list = new ArrayList<>(Arrays.asList("qwert1","ahb28fsa","p3fe@","p09kfQ"));
+    private final List<String> list = new ArrayList<String>(Arrays.asList("qwert1","ahb28fsa","p3fe@","p09kfQ"));
 
 
     public String getList() {
