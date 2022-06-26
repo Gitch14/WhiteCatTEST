@@ -1,0 +1,66 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Buy Page</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+</head>
+
+
+<header th:insert="bloks/header :: header"></header>
+
+
+<body class="text-center">
+
+<main class="form-signin w-25 m-auto">
+    <form action="/buy" method="post">
+        <img class="mb-4" src="https://static.vecteezy.com/ti/vecteur-libre/p1/2775409-pharmacie-pharmacie-vector-logo-vectoriel.jpg" alt="" width="150" height="140">
+        <h1 class="h3 mb-3 fw-normal">Please sign in</h1>
+
+        <div class="form-floating m-auto">
+            <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com" name="mail">
+            <label for="floatingInput">Email address</label>
+        </div>
+        <br>
+        <div class="form-floating">
+            <input class="form-control" id="floatingPhone" placeholder="phone" type="text" name="phone">
+            <label for="floatingPhone">Phone</label>
+        </div>
+        <br>
+        <div class="form-floating">
+            <input class="form-control" id="floatingName" placeholder="your name" type="text" name="name">
+            <label for="floatingName">name</label>
+        </div>
+        <br>
+        <div class="form-floating">
+            <textarea class="form-control" id="ms" placeholder="Your order" type="text" name="text"></textarea>
+            <label for="ms">Your order</label>
+        </div>
+        <br>
+        <div class="form-floating">
+            <div>
+                <p th:text="'Каптча ' + ${cap}"></p>
+
+            </div>
+        </div>
+        <br>
+        <div class="form-floating">
+            <input class="form-control" id="floatingCaptcha" placeholder="phone" type="text" name="captcha">
+            <label for="floatingCaptcha">Captcha</label>
+        </div>
+        <br>
+        <button class="w-100 btn btn-lg btn-primary" type="submit">Send</button>
+
+    </form>
+</main>
+
+
+
+
+
+</body>
+<footer th:insert="bloks/footer :: footer"></footer>
+</html>
