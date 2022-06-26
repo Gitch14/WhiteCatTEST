@@ -2,7 +2,7 @@
   <artifact type="jar" name="BenikShop:jar">
     <output-path>$PROJECT_DIR$/out/artifacts/BenikShop_jar</output-path>
     <root id="archive" name="BenikShop.jar">
-      <element id="module-output" name="BenikShop" />
+      <element id="module-output" name="Warehouse" />
       <element id="extracted-dir" path="$MAVEN_REPOSITORY$/org/springframework/spring-core/5.3.15/spring-core-5.3.15.jar" path-in-jar="/" />
       <element id="extracted-dir" path="$MAVEN_REPOSITORY$/ch/qos/logback/logback-classic/1.2.10/logback-classic-1.2.10.jar" path-in-jar="/" />
       <element id="extracted-dir" path="$MAVEN_REPOSITORY$/org/springframework/boot/spring-boot-autoconfigure/2.6.3/spring-boot-autoconfigure-2.6.3.jar" path-in-jar="/" />
