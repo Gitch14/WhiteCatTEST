@@ -1,7 +1,6 @@
 package com.elfbar.BenikShop.controllers;
 
 
-import com.elfbar.BenikShop.repo.ProductService;
 import com.elfbar.BenikShop.repo.ItemRepository;
 import com.elfbar.BenikShop.essences.Item;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -13,7 +12,6 @@ import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import java.util.ArrayList;
-import java.util.List;
 import java.util.Optional;
 
 
