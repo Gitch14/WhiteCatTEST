@@ -1,8 +1,9 @@
-package com.elfbar.BenikShop.controllers;
+package com.pharmancy.warhouse.controllers;
 
 
-import com.elfbar.BenikShop.repo.ItemRepository;
-import com.elfbar.BenikShop.essences.Item;
+import com.pharmancy.warhouse.Service.SearchService;
+import com.pharmancy.warhouse.repo.ItemRepository;
+import com.pharmancy.warhouse.essences.Item;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.repository.query.Param;
 import org.springframework.stereotype.Controller;
@@ -19,12 +20,16 @@ import java.util.Optional;
 public class ItemControl {
 
     @Autowired
+    private SearchService search;
+
+
+    @Autowired
     private ItemRepository itemRepository;
 
 
     @GetMapping("/")
     public String item(Model model, @Param("keyword") String keyword){
-        Iterable<Item> items = itemRepository.listAll(keyword);
+        Iterable<Item> items = search.listName(keyword);
         model.addAttribute("items", items);
         model.addAttribute("keyword", keyword);
         return "shop";

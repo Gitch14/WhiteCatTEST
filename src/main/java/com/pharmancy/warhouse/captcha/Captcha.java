@@ -1,4 +1,4 @@
-package com.elfbar.BenikShop.captcha;
+package com.pharmancy.warhouse.captcha;
 
 import java.util.ArrayList;
 import java.util.Arrays;

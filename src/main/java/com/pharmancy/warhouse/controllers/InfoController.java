@@ -1,8 +1,8 @@
-package com.elfbar.BenikShop.controllers;
+package com.pharmancy.warhouse.controllers;
 
-import com.elfbar.BenikShop.captcha.Captcha;
-import com.elfbar.BenikShop.repo.EmailRepository;
-import com.elfbar.BenikShop.essences.Email;
+import com.pharmancy.warhouse.captcha.Captcha;
+import com.pharmancy.warhouse.repo.EmailRepository;
+import com.pharmancy.warhouse.essences.Email;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;

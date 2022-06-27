@@ -1,4 +1,4 @@
-package com.elfbar.BenikShop;
+package com.pharmancy.warhouse;
 
 
 import org.springframework.context.annotation.Bean;

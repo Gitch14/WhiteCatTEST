@@ -1,4 +1,4 @@
-package com.elfbar.BenikShop.essences;
+package com.pharmancy.warhouse.essences;
 
 import javax.persistence.*;
 
