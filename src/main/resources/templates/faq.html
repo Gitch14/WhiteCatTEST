@@ -6,74 +6,97 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.0.3/css/font-awesome.css"></script>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <style>
+        .m{
+            padding-top: 20px;
+        }
+    </style>
 </head>
 
-
 <header th:insert="bloks/header :: header"></header>
-
 
 <body>
 
 <div class="container mt-5">
     <h1>FAQ</h1>
-    <section class="p-4 d-flex justify-content-center w-100" style="border-radius: .5rem .5rem 0 0; background-color:#fbfbfb;">
-        <div class="accordion w-100" id="basicAccordion">
-            <div class="accordion-item">
-                <h2 class="accordion-header" id="headingOne">
-                    <button class="accordion-button collapsed" type="button" data-mdb-toggle="collapse" data-mdb-target="#basicAccordionCollapseOne" aria-expanded="false" aria-controls="collapseOne">
-                        Question #1
-                    </button>
-                </h2>
-                <div id="basicAccordionCollapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne" data-mdb-parent="#basicAccordion" style="">
-                    <div class="accordion-body">
-                        <strong>This is the first item's accordion body.</strong> It is shown by default,
-                        until the collapse plugin adds the appropriate classes that we use to style each
-                        element. These classes control the overall appearance, as well as the showing and
-                        hiding via CSS transitions. You can modify any of this with custom CSS or overriding
-                        our default variables. It's also worth noting that just about any HTML can go within
-                        the <code>.accordion-body</code>, though the transition does limit overflow.
-                    </div>
-                </div>
-            </div>
-            <div class="accordion-item">
-                <h2 class="accordion-header" id="headingTwo">
-                    <button class="accordion-button collapsed" type="button" data-mdb-toggle="collapse" data-mdb-target="#basicAccordionCollapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                        Question #2
-                    </button>
-                </h2>
-                <div id="basicAccordionCollapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-mdb-parent="#basicAccordion" style="">
-                    <div class="accordion-body">
-                        <strong>This is the second item's accordion body.</strong> It is hidden by default,
-                        until the collapse plugin adds the appropriate classes that we use to style each
-                        element. These classes control the overall appearance, as well as the showing and
-                        hiding via CSS transitions. You can modify any of this with custom CSS or overriding
-                        our default variables. It's also worth noting that just about any HTML can go within
-                        the <code>.accordion-body</code>, though the transition does limit overflow.
-                    </div>
-                </div>
-            </div>
-            <div class="accordion-item">
-                <h2 class="accordion-header" id="headingThree">
-                    <button class="accordion-button collapsed" type="button" data-mdb-toggle="collapse" data-mdb-target="#basicAccordionCollapseThree" aria-expanded="false" aria-controls="collapseThree">
-                        Question #3
-                    </button>
-                </h2>
-                <div id="basicAccordionCollapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-mdb-parent="#basicAccordion" style="">
-                    <div class="accordion-body">
-                        <strong>This is the third item's accordion body.</strong> It is hidden by default,
-                        until the collapse plugin adds the appropriate classes that we use to style each
-                        element. These classes control the overall appearance, as well as the showing and
-                        hiding via CSS transitions. You can modify any of this with custom CSS or overriding
-                        our default variables. It's also worth noting that just about any HTML can go within
-                        the <code>.accordion-body</code>, though the transition does limit overflow.
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
+<p class="mt-5">
+    1. Вопрос
+</p>
+    Ответ 1
+
+    <p class="mt-5">
+    2. Вопрос
+    </p>
+        Ответ 2
+
+    <p class="mt-5">
+    3. Вопрос
+    </p>
+        Ответ 3
+
+
+    <p class="mt-5">
+    4. Вопрос
+        <br></p>
+    — Подвопрос 4.1
+    <br>
+    — Подвопрос 4.2
+    <br>
+    — Подвопрос 4.3
+    <br>
+    — Подвопрос 4.4
+    <br>
+    <p class="mt-5">
+    5. Вопрос
+    </p>
+        Ответ 5
+    <br>
+
+    <p class="mt-5">
+    6. Вопрос
+        <br>
+    </p>
+        Ответ 6
+    <br>
+
+    <p class="mt-5">
+    7. Вопрос
+    <br>
+    </p>
+    — Подвопрос 7.1
+    <br>
+    — Подвопрос 7.2
+    <br>
+    — Подвопрос 7.3
+    <br>
+
+    <p class="mt-5">
+    8. Вопрос
+        <br>
+    </p>
+        Ответ 8
+    <br>
+
+    <p class="mt-5">
+    9. Вопрос
+        <br>
+    </p>
+        Ответ 9
+
+
+
+    <p class="mt-5">
+    10. Вопрос
+    <br>
+    </p>
+        Ответ 10
+
+
 </div>
 
 </body>
-<footer th:insert="bloks/footer :: footer"></footer>
+<footer th:insert="bloks/footer-item :: footer" class="mt-5"></footer>
 </html>
