@@ -1,9 +1,11 @@
 package com.elfbar.BenikShop.controllers;
 
 
+import com.elfbar.BenikShop.repo.ProductService;
 import com.elfbar.BenikShop.repo.ItemRepository;
 import com.elfbar.BenikShop.essences.Item;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.data.repository.query.Param;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -11,6 +13,7 @@ import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import java.util.ArrayList;
+import java.util.List;
 import java.util.Optional;
 
 
@@ -22,9 +25,10 @@ public class ItemControl {
 
 
     @GetMapping("/")
-    public String item(Model model){
-        Iterable<Item> items = itemRepository.findAll();
+    public String item(Model model, @Param("keyword") String keyword){
+        Iterable<Item> items = itemRepository.listAll(keyword);
         model.addAttribute("items", items);
+        model.addAttribute("keyword", keyword);
         return "shop";
     }
 
