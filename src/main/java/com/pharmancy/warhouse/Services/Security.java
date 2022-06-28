@@ -1,4 +1,4 @@
-package com.pharmancy.warhouse;
+package com.pharmancy.warhouse.Services;
 
 
 import org.springframework.context.annotation.Bean;

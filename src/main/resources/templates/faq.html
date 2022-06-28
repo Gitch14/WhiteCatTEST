@@ -6,97 +6,156 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.0.3/css/font-awesome.css"></script>
+
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-    <style>
-        .m{
-            padding-top: 20px;
-        }
-    </style>
 </head>
 
-<header th:insert="bloks/header :: header"></header>
+<style>
 
+
+
+    .container-fluid {
+        width: 40%;
+        margin: 0 auto;
+        margin: 100px;
+    }
+
+    .container-fluid h2{
+        color:hotpink;
+        position:relative;
+        width:100%;
+        font-family: 'Baloo Bhaina 2', cursive;
+    }
+    .container-fluid h2::after {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        right: 30%;
+        width: 67px;
+        height: 2px;
+        background-color: hotpink;
+        font-family: 'Baloo Bhaina 2', cursive;
+    }
+
+    .accordion {
+        width: 100%;
+        padding: 05px;
+        border: 2px solid #6db5ff;
+        cursor: pointer;
+        border-radius: 50px;
+        display: flex;
+        margin: 10px;
+        align-items: center;
+    }
+
+    .accordion .icon {
+        width: 30px;
+        height: 30px;
+        background: url(https://cdn.pixabay.com/photo/2017/03/19/03/51/material-icon-2155448_1280.png) no-repeat #6db5ff;
+        border-radius: 50%;
+        float: left;
+        transition: all .5s ease-in;
+    }
+
+    .accordion h5{
+        font-size:22px;
+        margin:0;
+        padding:3px 0 0 0;
+        font-weight:normal;
+        color:#1f5c9a;
+    }
+
+    .panel{
+        padding:0 15px;
+
+        border-left:1px solid #6db5ff;
+        margin-left:25px;
+        font-size:14px;
+        text-align:justify;
+        overflow:hidden;
+        max-height: 300px;
+        transition:all .5s ease-in;
+    }
+</style>
+
+<header th:insert="bloks/header :: header"></header>
 <body>
 
-<div class="container mt-5">
-    <h1>FAQ</h1>
-<p class="mt-5">
-    1. Вопрос
-</p>
-    Ответ 1
+<div class="container-fluid">
+    <h2>Frequently Asked Questions(FAQs)</h2>
+                <div class="accordion">
+                    <div class="icon"></div>
+                     <h5>Questions 1?</h5>
+                </div>
+                <div class="panel">
+                    <p>Answers 1 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Nisi porta lorem mollis aliquam ut porttitor. Tincidunt vitae semper quis lectus nulla. Vitae semper quis lectus nulla at volutpat diam ut venenatis. Eu mi bibendum neque egestas congue quisque. Commodo elit at imperdiet dui accumsan sit amet nulla. Egestas diam in arcu cursus. Magna eget est lorem ipsum dolor sit amet. Vitae ultricies leo integer malesuada nunc vel risus commodo. Lorem ipsum dolor sit amet. Augue neque gravida in fermentum et sollicitudin. Arcu non odio euismod lacinia at quis. Vitae purus faucibus ornare suspendisse sed nisi lacus. Amet volutpat consequat mauris nunc congue nisi vitae suscipit tellus. Nibh mauris cursus mattis molestie a iaculis.</p>
+                </div>
+    <!-- -->
+    <div class="accordion">
+        <div class="icon"></div>
+        <h5>Questions 2?</h5>
+    </div>
+    <div class="panel">
+        <p>Answers 2 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Nisi porta lorem mollis aliquam ut porttitor. Tincidunt vitae semper quis lectus nulla. Vitae semper quis lectus nulla at volutpat diam ut venenatis. Eu mi bibendum neque egestas congue quisque. Commodo elit at imperdiet dui accumsan sit amet nulla. Egestas diam in arcu cursus. Magna eget est lorem ipsum dolor sit amet. Vitae ultricies leo integer malesuada nunc vel risus commodo. Lorem ipsum dolor sit amet. Augue neque gravida in fermentum et sollicitudin. Arcu non odio euismod lacinia at quis. Vitae purus faucibus ornare suspendisse sed nisi lacus. Amet volutpat consequat mauris nunc congue nisi vitae suscipit tellus. Nibh mauris cursus mattis molestie a iaculis.</p>
 
-    <p class="mt-5">
-    2. Вопрос
-    </p>
-        Ответ 2
+    </div>
 
-    <p class="mt-5">
-    3. Вопрос
-    </p>
-        Ответ 3
+    <!-- -->
+    <div class="accordion">
+        <div class="icon"></div>
+        <h5>Questions 3?</h5>
+    </div>
+    <div class="panel">
+        <p>Answers 3 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Nisi porta lorem mollis aliquam ut porttitor. Tincidunt vitae semper quis lectus nulla. Vitae semper quis lectus nulla at volutpat diam ut venenatis. Eu mi bibendum neque egestas congue quisque. Commodo elit at imperdiet dui accumsan sit amet nulla. Egestas diam in arcu cursus. Magna eget est lorem ipsum dolor sit amet. Vitae ultricies leo integer malesuada nunc vel risus commodo. Lorem ipsum dolor sit amet. Augue neque gravida in fermentum et sollicitudin. Arcu non odio euismod lacinia at quis. Vitae purus faucibus ornare suspendisse sed nisi lacus. Amet volutpat consequat mauris nunc congue nisi vitae suscipit tellus. Nibh mauris cursus mattis molestie a iaculis.</p>
 
-
-    <p class="mt-5">
-    4. Вопрос
-        <br></p>
-    — Подвопрос 4.1
-    <br>
-    — Подвопрос 4.2
-    <br>
-    — Подвопрос 4.3
-    <br>
-    — Подвопрос 4.4
-    <br>
-    <p class="mt-5">
-    5. Вопрос
-    </p>
-        Ответ 5
-    <br>
-
-    <p class="mt-5">
-    6. Вопрос
-        <br>
-    </p>
-        Ответ 6
-    <br>
-
-    <p class="mt-5">
-    7. Вопрос
-    <br>
-    </p>
-    — Подвопрос 7.1
-    <br>
-    — Подвопрос 7.2
-    <br>
-    — Подвопрос 7.3
-    <br>
-
-    <p class="mt-5">
-    8. Вопрос
-        <br>
-    </p>
-        Ответ 8
-    <br>
-
-    <p class="mt-5">
-    9. Вопрос
-        <br>
-    </p>
-        Ответ 9
+    </div>
 
 
+    <!-- -->
+    <div class="accordion">
+        <div class="icon"></div>
+        <h5>Questions 4?</h5>
+    </div>
+    <div class="panel">
+        <p>Answers 4 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Nisi porta lorem mollis aliquam ut porttitor. Tincidunt vitae semper quis lectus nulla. Vitae semper quis lectus nulla at volutpat diam ut venenatis. Eu mi bibendum neque egestas congue quisque. Commodo elit at imperdiet dui accumsan sit amet nulla. Egestas diam in arcu cursus. Magna eget est lorem ipsum dolor sit amet. Vitae ultricies leo integer malesuada nunc vel risus commodo. Lorem ipsum dolor sit amet. Augue neque gravida in fermentum et sollicitudin. Arcu non odio euismod lacinia at quis. Vitae purus faucibus ornare suspendisse sed nisi lacus. Amet volutpat consequat mauris nunc congue nisi vitae suscipit tellus. Nibh mauris cursus mattis molestie a iaculis.</p>
 
-    <p class="mt-5">
-    10. Вопрос
-    <br>
-    </p>
-        Ответ 10
+    </div>
 
+    <!-- -->
+    <div class="accordion">
+        <div class="icon"></div>
+        <h5>Questions 5?</h5>
+    </div>
+    <div class="panel">
+        <p>Answers 5 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Nisi porta lorem mollis aliquam ut porttitor. Tincidunt vitae semper quis lectus nulla. Vitae semper quis lectus nulla at volutpat diam ut venenatis. Eu mi bibendum neque egestas congue quisque. Commodo elit at imperdiet dui accumsan sit amet nulla. Egestas diam in arcu cursus. Magna eget est lorem ipsum dolor sit amet. Vitae ultricies leo integer malesuada nunc vel risus commodo. Lorem ipsum dolor sit amet. Augue neque gravida in fermentum et sollicitudin. Arcu non odio euismod lacinia at quis. Vitae purus faucibus ornare suspendisse sed nisi lacus. Amet volutpat consequat mauris nunc congue nisi vitae suscipit tellus. Nibh mauris cursus mattis molestie a iaculis.</p>
+
+    </div>
+
+    <!-- -->
+    <div class="accordion">
+        <div class="icon"></div>
+        <h5>Questions 6?</h5>
+    </div>
+    <div class="panel">
+        <p>Answers 6 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Nisi porta lorem mollis aliquam ut porttitor. Tincidunt vitae semper quis lectus nulla. Vitae semper quis lectus nulla at volutpat diam ut venenatis. Eu mi bibendum neque egestas congue quisque. Commodo elit at imperdiet dui accumsan sit amet nulla. Egestas diam in arcu cursus. Magna eget est lorem ipsum dolor sit amet. Vitae ultricies leo integer malesuada nunc vel risus commodo. Lorem ipsum dolor sit amet. Augue neque gravida in fermentum et sollicitudin. Arcu non odio euismod lacinia at quis. Vitae purus faucibus ornare suspendisse sed nisi lacus. Amet volutpat consequat mauris nunc congue nisi vitae suscipit tellus. Nibh mauris cursus mattis molestie a iaculis.</p>
+
+    </div>
+
+    <!-- -->
+    <div class="accordion">
+        <div class="icon"></div>
+        <h5>Questions 7?</h5>
+    </div>
+    <div class="panel">
+        <p>Answers 7 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Nisi porta lorem mollis aliquam ut porttitor. Tincidunt vitae semper quis lectus nulla. Vitae semper quis lectus nulla at volutpat diam ut venenatis. Eu mi bibendum neque egestas congue quisque. Commodo elit at imperdiet dui accumsan sit amet nulla. Egestas diam in arcu cursus. Magna eget est lorem ipsum dolor sit amet. Vitae ultricies leo integer malesuada nunc vel risus commodo. Lorem ipsum dolor sit amet. Augue neque gravida in fermentum et sollicitudin. Arcu non odio euismod lacinia at quis. Vitae purus faucibus ornare suspendisse sed nisi lacus. Amet volutpat consequat mauris nunc congue nisi vitae suscipit tellus. Nibh mauris cursus mattis molestie a iaculis.</p>
+
+    </div>
 
 </div>
 
+
+
+</div>
 </body>
 <footer th:insert="bloks/footer-item :: footer" class="mt-5"></footer>
 </html>

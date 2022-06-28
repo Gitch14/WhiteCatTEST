@@ -1,4 +1,4 @@
-package com.pharmancy.warhouse.captcha;
+package com.pharmancy.warhouse.Services;
 
 import java.util.ArrayList;
 import java.util.Arrays;

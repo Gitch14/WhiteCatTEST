@@ -1,7 +1,7 @@
 package com.pharmancy.warhouse.controllers;
 
 
-import com.pharmancy.warhouse.Service.SearchService;
+import com.pharmancy.warhouse.Services.SearchService;
 import com.pharmancy.warhouse.repo.ItemRepository;
 import com.pharmancy.warhouse.essences.Item;
 import org.springframework.beans.factory.annotation.Autowired;

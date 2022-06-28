@@ -1,4 +1,4 @@
-package com.pharmancy.warhouse.Service;
+package com.pharmancy.warhouse.Services;
 
 import com.pharmancy.warhouse.essences.Item;
 import com.pharmancy.warhouse.repo.ItemRepository;

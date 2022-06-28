@@ -1,6 +1,6 @@
 package com.pharmancy.warhouse.controllers;
 
-import com.pharmancy.warhouse.captcha.Captcha;
+import com.pharmancy.warhouse.Services.Captcha;
 import com.pharmancy.warhouse.repo.EmailRepository;
 import com.pharmancy.warhouse.essences.Email;
 import org.springframework.beans.factory.annotation.Autowired;
