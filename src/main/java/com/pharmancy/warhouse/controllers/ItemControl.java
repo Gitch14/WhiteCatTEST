@@ -87,7 +87,7 @@ public class ItemControl {
 
     @PostMapping("/admin-panel/{id}/edit")
     public String itemUpdate(@PathVariable(value = "id") long id, @RequestParam String title, @RequestParam String imgUrl,@RequestParam double price, Model model){
-        Item item = itemRepository.findById(id).orElseThrow();
+        Item item = itemRepository.findById(id).orElseThrow(null);
         item.setTitle(title);
         item.setImgUrl(imgUrl);
         item.setPrice(price);
