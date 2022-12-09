@@ -87,7 +87,7 @@ public class ItemControl {
 
     @PostMapping("/admin-panel/{id}/edit")
     public String itemUpdate(@PathVariable(value = "id") long id, @RequestParam String title, @RequestParam String imgUrl,@RequestParam double price, Model model){
-        Item item = itemRepository.findById(id).orElse(null);
+        Item item = itemRepository.findById(id).orElseThrow(null);
         item.setTitle(title);
         item.setImgUrl(imgUrl);
         item.setPrice(price);
@@ -115,7 +115,7 @@ public class ItemControl {
 
     @PostMapping("/admin-panel/{id}/itemPlusCount")
     public String itemCountPlus(@PathVariable(value = "id") long id, @RequestParam int count, Model model){
-        Item item = itemRepository.findById(id).orElse(null);
+        Item item = itemRepository.findById(id).orElseThrow(null);
         item.setCount(count + item.getCount());
         itemRepository.save(item);
 
@@ -140,7 +140,7 @@ public class ItemControl {
 
     @PostMapping("/admin-panel/{id}/itemMinusCount")
     public String itemCountMinus(@PathVariable(value = "id") long id, @RequestParam int count, Model model){
-        Item item = itemRepository.findById(id).orElse(null);
+        Item item = itemRepository.findById(id).orElseThrow(null);
         if (item.getCount() >= count) {
             item.setCount(item.getCount() - count);
             itemRepository.save(item);
@@ -152,7 +152,7 @@ public class ItemControl {
 
     @PostMapping("/admin-panel/{id}/remove")
     public String itemDelete(@PathVariable(value = "id") long id, Model model){
-        Item item = itemRepository.findById(id).orElse(null);
+        Item item = itemRepository.findById(id).orElseThrow(null);
         itemRepository.delete(item);
 
         return "redirect:/admin-panel";
